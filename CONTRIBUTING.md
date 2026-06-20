@@ -7,10 +7,12 @@
 - The directory name, catalog entry name, and both manifest names must match.
 - Both manifests must carry the same semantic version.
 - Shared skills use `skills/<skill-name>/SKILL.md` with `name` and `description` frontmatter.
+- Every user-facing skill must load `diligence-brand-guidelines`; keep visual defaults, citation formats, and link policy centralized there.
 - Keep platform-specific metadata in its platform manifest. Keep workflow instructions in shared skills.
 - Do not reference files outside a plugin directory; Claude copies installed plugins into a cache.
 - Remote MCP servers belong in the plugin's `.mcp.json`. Never commit OAuth tokens, bearer tokens, or client secrets.
 - Never embed private equity-research content, evidence IDs, licensed excerpts, or authenticated links in plugin source, fixtures, or examples.
+- In skill instructions and generated artifacts, emit external hyperlinks only to HTTPS pages on the exact host `www.thediligencestack.com`. The MCP endpoint may appear only in machine connection metadata and validation code.
 
 ## Release checklist
 

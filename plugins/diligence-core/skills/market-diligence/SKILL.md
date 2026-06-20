@@ -7,6 +7,10 @@ description: Create a source-linked market primer using the Diligence Stack know
 
 Explain how a market works before estimating who wins.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Research sequence
 
 1. Follow the `diligence-research` MCP playbook. Search `diligence-stack-reports` across relevant Market Primer, Diligence Stack, AI Networking, SaaS, and Vendor Notes categories discovered live.

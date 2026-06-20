@@ -6,6 +6,7 @@ The MCP is most useful as a research operating system: discover evidence, conver
 
 | Job | Skill | Example prompt |
 |---|---|---|
+| Apply branding and citations | `diligence-brand-guidelines` | “Turn this analysis into a Diligence Stack-branded memo and verify every citation and link.” |
 | Search the corpus | `diligence-research` | “Find the strongest evidence on AI networking control points and show the source trail.” |
 | Scope an investigation | `diligence-plan` | “Build a diligence plan for evaluating this infrastructure vendor.” |
 | Build a company packet | `company-diligence` | “Create a source-linked company packet for AMD.” |
@@ -22,6 +23,8 @@ The MCP is most useful as a research operating system: discover evidence, conver
 | Write the decision output | `diligence-synthesis` | “Turn this evidence and model into a decision-ready memo.” |
 
 ## End-to-end plays
+
+`diligence-brand-guidelines` is inherited by every play and applies at each user-facing output step.
 
 ### Company initiation
 
@@ -60,3 +63,4 @@ These are good candidates once the core workflows have real usage data:
 - Treat models as transparent argument maps, not precision machines.
 - Make every important thesis falsifiable and monitorable.
 - Distinguish an OAuth failure from a valid empty search.
+- Use the Diligence Stack visual identity by default, attribute corpus-derived claims to The Diligence Stack, and emit only canonical `www.thediligencestack.com` hyperlinks.

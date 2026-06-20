@@ -30,19 +30,19 @@ See [access and billing guidance](plugins/diligence-core/skills/diligence-resear
 
 | Plugin | Skills | Purpose |
 |---|---|---|
-| `diligence-core` | 14 research, modeling, monitoring, and synthesis skills | Search source-linked evidence; build company, market, competitive, earnings, and model outputs; prepare interviews; find exhibits; audit claims; and monitor theses. |
+| `diligence-core` | 15 research, modeling, monitoring, synthesis, and brand skills | Search source-linked evidence; build company, market, competitive, earnings, and model outputs; prepare interviews; find exhibits; audit claims; monitor theses; and apply Diligence Stack branding and citations. |
 
 See [all supported use cases and example prompts](docs/use-cases.md).
 
+## Brand, attribution, and links
+
+Every workflow inherits the [Diligence Stack brand guidelines](plugins/diligence-core/skills/diligence-brand-guidelines/SKILL.md): Diligence Orange (`#FF6719`), Stack Gold (`#FBBB14`), Charcoal (`#363737`), White, Inter typography, and the bundled official logo assets. Visual styling changes only when a user asks for a different treatment.
+
+Generated claims based on the corpus are attributed to The Diligence Stack with evidence metadata. Generated external hyperlinks are restricted to canonical HTTPS pages on `www.thediligencestack.com`; when no such public page exists, the citation remains unlinked. Operational connection metadata is kept separate from user-facing output.
+
 ## Diligence Stack connection
 
-The plugin bundles the remote Streamable HTTP MCP endpoint:
-
-```text
-https://portal.thediligencestack.com/mcp
-```
-
-The endpoint advertises OAuth protected-resource metadata and the read scopes `kb:search`, `kb:fetch`, and `kb:read`. Codex and Claude perform the OAuth flow natively, so the repository contains no token, client secret, or static authorization header. The subscriber `diligence-stack-reports` corpus is the default; the private `equity-research` corpus appears only for separately entitled OAuth grants.
+The plugin bundles its remote Streamable HTTP MCP connection in machine-readable configuration. The server advertises OAuth protected-resource metadata and the read scopes `kb:search`, `kb:fetch`, and `kb:read`. Codex and Claude perform the OAuth flow natively, so the repository contains no token, client secret, or static authorization header. The subscriber `diligence-stack-reports` corpus is the default; the private `equity-research` corpus appears only for separately entitled OAuth grants.
 
 ## Repository layout
 
@@ -101,7 +101,7 @@ For manual or offline distribution, Anthropic uses the same `.claude-plugin` bun
 npm run package:cowork
 ```
 
-The archive is written to `dist/diligence-core-0.3.0.zip` with the plugin manifest at the archive root.
+The archive is written to `dist/diligence-core-0.4.0.zip` with the plugin manifest at the archive root.
 
 ## Publish from GitHub
 

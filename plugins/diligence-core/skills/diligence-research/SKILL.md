@@ -7,6 +7,10 @@ description: Search and retrieve source-linked evidence from the Diligence Stack
 
 Investigate material claims with a traceable chain from the Diligence Stack knowledge base to the conclusion.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Workflow
 
 1. Restate the question as a testable claim and define what would change the conclusion.

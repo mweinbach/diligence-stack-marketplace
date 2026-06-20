@@ -7,6 +7,10 @@ description: Prepare high-signal, source-linked questions for company management
 
 Use scarce meeting time to resolve thesis-critical uncertainty, not recite public facts.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Workflow
 
 1. Confirm respondent type, meeting length, decision context, and topics that are off limits.

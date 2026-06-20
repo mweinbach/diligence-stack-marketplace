@@ -7,6 +7,10 @@ description: Synthesize diligence evidence into a decision-ready memo, scorecard
 
 Turn the evidence set into a clear decision without laundering uncertainty.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Workflow
 
 1. Reconfirm the decision and threshold. Do not optimize the memo for completeness at the expense of the decision.

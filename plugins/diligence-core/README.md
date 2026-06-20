@@ -6,10 +6,11 @@ A shared Codex, ChatGPT, Claude Code, and Claude Cowork plugin for **The Diligen
 
 The Diligence Stack is a Substack research publication covering the core fundamentals of companies and industries across the technology stack. It focuses on AI and the layers AI connects—semiconductors, infrastructure, cloud, platforms, software, customer adoption, business models, and competitive position—while extending to any market where full-stack diligence matters.
 
-It connects to the private subscriber portal's MCP server at `https://portal.thediligencestack.com/mcp`. The server uses OAuth, so each user signs in through the client during installation or first use; no client secret or access token is stored in this repository. Installing the plugin does not grant a subscription.
+It connects to the private subscriber research service through bundled machine-readable MCP configuration. The server uses OAuth, so each user signs in through the client during installation or first use; no client secret or access token is stored in this repository. Installing the plugin does not grant a subscription.
 
-It includes fourteen skills:
+It includes fifteen skills:
 
+- `diligence-brand-guidelines` supplies the required colors, typography, logo assets, Diligence Stack citation formats, and canonical-link policy inherited by every other workflow.
 - `diligence-plan` scopes the decision, hypotheses, workstreams, and evidence requests.
 - `diligence-research` operates the catalog-first MCP search, fetch, and document workflow.
 - `diligence-synthesis` turns the evidence set into a recommendation, risk register, and decision memo.
@@ -32,5 +33,7 @@ See [access and billing](skills/diligence-research/references/access-and-billing
 See the repository's [use-case map](../../docs/use-cases.md) for example prompts and the future roadmap.
 
 The plugin's company and market frames are grounded in the live Diligence Stack corpus while remaining reusable across covered sectors.
+
+Generated artifacts use Diligence Stack styling unless the user explicitly asks for different visuals. Corpus-derived claims retain Diligence Stack attribution, and generated external links are limited to canonical HTTPS pages on `www.thediligencestack.com`.
 
 This plugin supports research and analysis; it does not replace qualified legal, tax, accounting, medical, or regulatory advice.

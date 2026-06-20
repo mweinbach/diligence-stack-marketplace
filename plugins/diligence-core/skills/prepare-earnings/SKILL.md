@@ -7,6 +7,10 @@ description: Prepare a source-linked pre-earnings brief or post-earnings thesis 
 
 Use the MCP for research context and thesis history; use current primary company materials for same-day reported results.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Choose the mode
 
 - **Pre-earnings:** identify the debate, critical KPIs, expectations, scenarios, questions, and thesis-moving thresholds.

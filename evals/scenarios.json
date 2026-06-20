@@ -98,6 +98,13 @@
       "expected_skills": ["evidence-audit", "build-diligence-model"],
       "access": "subscriber",
       "success_criteria": ["reproduces calculations", "checks denominators and attribution", "ranks unsupported claims by materiality", "defines upgrade evidence"]
+    },
+    {
+      "id": "branded-diligence-deliverable",
+      "prompt": "Turn this Diligence Stack analysis into a branded client-ready memo with linked citations.",
+      "expected_skills": ["diligence-synthesis", "diligence-brand-guidelines"],
+      "access": "subscriber",
+      "success_criteria": ["uses the approved Diligence Stack palette and Inter", "uses official logo assets without modification", "attributes material corpus-derived claims to The Diligence Stack", "links only to canonical HTTPS pages on www.thediligencestack.com", "leaves citations unlinked when no allowed public page exists", "does not emit portal, MCP, authenticated-original, or third-party URLs"]
     }
   ]
 }

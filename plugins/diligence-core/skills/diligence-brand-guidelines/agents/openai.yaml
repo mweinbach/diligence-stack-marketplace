@@ -1,0 +1,15 @@
+interface:
+  display_name: "Diligence Stack Brand Guide"
+  short_description: "Apply Diligence Stack branding and citations"
+  icon_small: "./assets/creative-strategies-mark.png"
+  icon_large: "./assets/diligence-stack-wordmark.jpeg"
+  brand_color: "#FF6719"
+  default_prompt: "Use $diligence-brand-guidelines to brand this Diligence Stack deliverable and verify its citations and links."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

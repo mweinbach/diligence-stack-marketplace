@@ -7,6 +7,10 @@ description: Convert diligence research into a living thesis with evidence, key 
 
 Make the thesis observable and updateable rather than static prose.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Workflow
 
 1. State the current thesis, decision, time horizon, and confidence.

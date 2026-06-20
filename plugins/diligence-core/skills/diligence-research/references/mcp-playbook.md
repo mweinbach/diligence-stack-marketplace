@@ -48,7 +48,9 @@ For each material claim retain:
 | Evidence ID | Always |
 | Asset ID | When document context was retrieved |
 | Knowledge base | Always; mark private equity research |
-| URL | Prefer a public canonical URL; authenticated originals may not work for other readers |
+| URL | Link only to an HTTPS page whose exact host is `www.thediligencestack.com`; otherwise leave the citation unlinked |
 | Claim type and confidence | Preserve when the evidence supplies them; otherwise assign and label as your assessment |
 
-Never turn an authenticated portal or admin URL into a supposedly public citation.
+Render house-research citations as `The Diligence Stack — “{title},” {date}, {locator} (Evidence {id}).` Render separately entitled material as `Accessed via The Diligence Stack — {publisher}, “{title},” {date}, {locator} (private; Evidence {id}).` Preserve the original publisher without presenting its work as the Diligence Stack house view.
+
+Never expose portal, MCP, authenticated-original, admin, Substack, publisher, vendor, data-room, or other third-party links. Never turn one of those URLs into a supposedly public citation. If no canonical Diligence Stack page exists, retain the title, date, locator, and evidence ID as unlinked text.

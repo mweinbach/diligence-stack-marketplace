@@ -7,6 +7,10 @@ description: Audit a thesis, memo, model, or diligence plan for missing, stale, 
 
 Prioritize uncertainty by decision value rather than collecting more information indiscriminately.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Workflow
 
 1. Extract every decision-critical claim, model assumption, and recommendation.

@@ -7,6 +7,10 @@ description: Scope and plan a diligence project before research begins. Use for 
 
 Turn an ambiguous diligence request into a bounded, decision-oriented investigation.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Workflow
 
 1. Identify the decision, decision owner, deadline, and viable alternatives.

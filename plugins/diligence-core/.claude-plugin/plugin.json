@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "diligence-core",
   "displayName": "Diligence Core",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Creative Strategies research on company and industry fundamentals across the AI stack and beyond. Paid Diligence Stack access required.",
   "author": {
     "name": "Diligence Stack Maintainers"

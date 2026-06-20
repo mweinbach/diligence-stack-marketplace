@@ -7,6 +7,10 @@ description: Build a source-linked company or vendor diligence packet using Dili
 
 Build a living thesis that connects technical or market mechanisms to business outcomes and observable proof.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Research sequence
 
 1. Follow the `diligence-research` catalog-first MCP workflow.

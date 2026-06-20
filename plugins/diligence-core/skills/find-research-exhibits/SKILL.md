@@ -7,6 +7,10 @@ description: Find and assemble source-linked charts, tables, scorecards, heat ma
 
 Retrieve the strongest existing visual evidence without confusing a chart description with the chart itself.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Workflow
 
 1. Define the claim the exhibit must support, audience, format, and whether private sources are allowed.

@@ -1,6 +1,6 @@
 {
   "name": "diligence-core",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Creative Strategies research on company and industry fundamentals across the AI stack and beyond. Paid Diligence Stack access required.",
   "author": {
     "name": "Diligence Stack Maintainers"
@@ -12,7 +12,7 @@
   "interface": {
     "displayName": "Diligence Core",
     "shortDescription": "Source-linked company and market diligence.",
-    "longDescription": "Use Creative Strategies' Diligence Stack subscriber research to build company packets and market primers, audit evidence quality, optionally synthesize separately entitled equity research, and produce decision-ready diligence. A paid Diligence Stack subscription is required for portal and MCP access.",
+    "longDescription": "Use Creative Strategies' Diligence Stack subscriber research to build branded company packets and market primers, audit evidence quality, optionally synthesize separately entitled equity research, and produce decision-ready diligence with Diligence Stack citations. A paid Diligence Stack subscription is required for research access.",
     "developerName": "Diligence Stack Maintainers",
     "category": "Research",
     "capabilities": ["Research", "Analysis", "Writing", "MCP"],

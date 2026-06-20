@@ -7,6 +7,10 @@ description: Build a source-linked, driver-based diligence model with assumption
 
 Turn a research thesis into a transparent model whose assumptions can be tested and updated.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Workflow
 
 1. Define the decision, model output, forecast horizon, frequency, currency, units, and required precision.

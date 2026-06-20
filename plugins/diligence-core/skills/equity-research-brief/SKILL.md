@@ -7,6 +7,10 @@ description: Synthesize separately entitled private equity research alongside th
 
 Use private research carefully and make access boundaries visible.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Access gate
 
 1. Call `list_catalog` with no filter.

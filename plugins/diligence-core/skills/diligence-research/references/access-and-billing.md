@@ -42,7 +42,7 @@ The research is designed to clarify systems, mechanisms, assumptions, and compet
 If authorization fails:
 
 1. Confirm the user has a paid Diligence Stack subscription under the email used for the portal.
-2. Have the user sign into the [subscriber portal](https://portal.thediligencestack.com/) and complete email or passkey verification.
+2. Have the user open [The Diligence Stack](https://www.thediligencestack.com/) and choose the subscriber sign-in flow to complete email or passkey verification.
 3. Retry the MCP OAuth connection from Codex or Claude.
 4. If the shared corpus works but `equity-research` is absent, explain that it is a separate private entitlement rather than an OAuth failure.
 

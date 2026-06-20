@@ -7,6 +7,10 @@ description: Map competitors, substitutes, value-chain roles, architecture contr
 
 Compare companies at the layer where competition actually occurs.
 
+## Brand contract
+
+Before producing user-facing content, read and apply [the Diligence Stack brand guidelines](../diligence-brand-guidelines/SKILL.md). Use its color, typography, logo, citation, and link defaults unless the user explicitly requests different visual styling; its attribution and canonical-link rules always apply.
+
 ## Workflow
 
 1. Define the customer job, economic unit, system boundary, and forecast horizon.

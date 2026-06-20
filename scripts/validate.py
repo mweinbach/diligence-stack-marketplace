@@ -7,6 +7,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +17,25 @@ EVAL_SCENARIOS = ROOT / "evals" / "scenarios.json"
 SEMVER = re.compile(r"^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$")
 KEBAB = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 EXPECTED_MCP_URL = "https://portal.thediligencestack.com/mcp"
+BRAND_SKILL = "diligence-brand-guidelines"
+BRAND_GUIDE_LINK = "(../diligence-brand-guidelines/SKILL.md)"
+CANONICAL_PUBLIC_HOST = "www.thediligencestack.com"
+PORTAL_HOST = "portal.thediligencestack.com"
+WEB_URL = re.compile(r"https?://[^\s<>()\[\]\"'`]+")
+BRAND_ASSETS = {
+    "creative-strategies-mark.png",
+    "diligence-stack-logo.png",
+    "diligence-stack-wordmark.jpeg",
+}
+BRAND_REQUIRED_MARKERS = {
+    "#FF6719",
+    "#FBBB14",
+    "#363737",
+    "Inter",
+    "The Diligence Stack —",
+    "Research and citations: The Diligence Stack by Creative Strategies.",
+    "exact hostname is `www.thediligencestack.com`",
+}
 
 
 def load_json(path: Path, errors: list[str]) -> dict:
@@ -43,6 +63,26 @@ def skill_frontmatter(path: Path, errors: list[str]) -> dict[str, str]:
             key, value = line.split(":", 1)
             fields[key.strip()] = value.strip()
     return fields
+
+
+def validate_user_facing_urls(skill_root: Path, errors: list[str]) -> None:
+    for path in sorted(skill_root.rglob("*.md")):
+        text = path.read_text(encoding="utf-8")
+        for match in WEB_URL.finditer(text):
+            url = match.group(0).rstrip(".,;:")
+            parsed = urlsplit(url)
+            if parsed.scheme != "https" or parsed.hostname != CANONICAL_PUBLIC_HOST:
+                errors.append(
+                    f"{path.relative_to(ROOT)} contains non-canonical user-facing URL {url!r}"
+                )
+
+
+def validate_no_portal_urls_in_markdown(errors: list[str]) -> None:
+    for path in sorted(ROOT.rglob("*.md")):
+        if ".git" in path.parts or "dist" in path.parts:
+            continue
+        if PORTAL_HOST in path.read_text(encoding="utf-8"):
+            errors.append(f"{path.relative_to(ROOT)} exposes the private portal URL")
 
 
 def main() -> int:
@@ -103,7 +143,8 @@ def main() -> int:
         if claude_path != expected:
             errors.append(f"Claude source for {name} must be {expected!r}")
 
-        skills = sorted(plugin.glob("skills/*/SKILL.md"))
+        skill_root = plugin / "skills"
+        skills = sorted(skill_root.glob("*/SKILL.md"))
         if not skills:
             errors.append(f"{name} has no skills")
         seen_skills: set[str] = set()
@@ -122,6 +163,19 @@ def main() -> int:
             skill_text = skill.read_text(encoding="utf-8")
             if "[TODO" in skill_text:
                 errors.append(f"{skill.relative_to(ROOT)} contains a TODO placeholder")
+            if skill_name != BRAND_SKILL and BRAND_GUIDE_LINK not in skill_text:
+                errors.append(
+                    f"{skill.relative_to(ROOT)} must load the Diligence Stack brand guidelines"
+                )
+            if skill_name == BRAND_SKILL:
+                missing_markers = sorted(
+                    marker for marker in BRAND_REQUIRED_MARKERS if marker not in skill_text
+                )
+                if missing_markers:
+                    errors.append(
+                        f"{skill.relative_to(ROOT)} is missing brand-policy markers: "
+                        f"{missing_markers}"
+                    )
 
             openai_yaml = skill.parent / "agents" / "openai.yaml"
             if not openai_yaml.exists():
@@ -136,6 +190,16 @@ def main() -> int:
                     errors.append(
                         f"{openai_yaml.relative_to(ROOT)} must declare the Diligence Stack MCP dependency"
                     )
+
+        brand_assets = skill_root / BRAND_SKILL / "assets"
+        missing_brand_assets = sorted(
+            asset for asset in BRAND_ASSETS if not (brand_assets / asset).is_file()
+        )
+        if missing_brand_assets:
+            errors.append(f"{name} is missing brand assets: {missing_brand_assets}")
+        validate_user_facing_urls(skill_root, errors)
+
+    validate_no_portal_urls_in_markdown(errors)
 
     evals = load_json(EVAL_SCENARIOS, errors)
     scenarios = evals.get("scenarios", [])
