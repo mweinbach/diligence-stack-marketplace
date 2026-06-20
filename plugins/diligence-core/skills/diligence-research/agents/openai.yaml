@@ -1,0 +1,12 @@
+interface:
+  display_name: "Diligence Research"
+  short_description: "Search and retrieve source-linked research evidence"
+  default_prompt: "Use $diligence-research to investigate this question with source-linked evidence."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

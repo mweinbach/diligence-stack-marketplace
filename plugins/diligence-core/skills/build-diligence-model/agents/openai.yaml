@@ -1,0 +1,12 @@
+interface:
+  display_name: "Diligence Model"
+  short_description: "Build source-linked driver models and scenarios"
+  default_prompt: "Use $build-diligence-model to build a source-linked driver model for this thesis."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

@@ -1,0 +1,12 @@
+interface:
+  display_name: "Diligence Plan"
+  short_description: "Scope decisions, hypotheses, and research work"
+  default_prompt: "Use $diligence-plan to scope this diligence project and evidence plan."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

@@ -1,0 +1,25 @@
+{
+  "name": "diligence-core",
+  "version": "0.3.0",
+  "description": "Creative Strategies research on company and industry fundamentals across the AI stack and beyond. Paid Diligence Stack access required.",
+  "author": {
+    "name": "Diligence Stack Maintainers"
+  },
+  "license": "MIT",
+  "keywords": ["diligence", "research", "evidence", "risk", "investment"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Diligence Core",
+    "shortDescription": "Source-linked company and market diligence.",
+    "longDescription": "Use Creative Strategies' Diligence Stack subscriber research to build company packets and market primers, audit evidence quality, optionally synthesize separately entitled equity research, and produce decision-ready diligence. A paid Diligence Stack subscription is required for portal and MCP access.",
+    "developerName": "Diligence Stack Maintainers",
+    "category": "Research",
+    "capabilities": ["Research", "Analysis", "Writing", "MCP"],
+    "defaultPrompt": [
+      "Build a source-linked diligence brief on this company.",
+      "Build a driver model with evidence-linked assumptions.",
+      "Turn this thesis into a monitoring dashboard."
+    ]
+  }
+}

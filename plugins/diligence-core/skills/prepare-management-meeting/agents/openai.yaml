@@ -1,0 +1,12 @@
+interface:
+  display_name: "Management Meeting Prep"
+  short_description: "Prepare high-signal diligence questions"
+  default_prompt: "Use $prepare-management-meeting to prepare questions for this management meeting."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

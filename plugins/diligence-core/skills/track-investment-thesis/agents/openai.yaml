@@ -1,0 +1,12 @@
+interface:
+  display_name: "Thesis Tracker"
+  short_description: "Track thesis signals and falsification conditions"
+  default_prompt: "Use $track-investment-thesis to turn this research into a monitored thesis."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

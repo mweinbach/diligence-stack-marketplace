@@ -1,0 +1,12 @@
+interface:
+  display_name: "Company Diligence"
+  short_description: "Build source-linked company and vendor packets"
+  default_prompt: "Use $company-diligence to build a source-linked company diligence packet."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

@@ -1,0 +1,17 @@
+{
+  "name": "diligence-stack",
+  "owner": {
+    "name": "Diligence Stack Maintainers"
+  },
+  "description": "Reusable, evidence-first diligence workflows for Claude and Codex.",
+  "plugins": [
+    {
+      "name": "diligence-core",
+      "displayName": "Diligence Core",
+      "source": "./plugins/diligence-core",
+      "description": "Creative Strategies research covering company and industry fundamentals across the AI stack and beyond. Paid Diligence Stack access required; equity research is separately entitled.",
+      "category": "research",
+      "tags": ["diligence", "research", "evidence", "risk"]
+    }
+  ]
+}

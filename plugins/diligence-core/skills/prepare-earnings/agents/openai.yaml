@@ -1,0 +1,12 @@
+interface:
+  display_name: "Earnings Research"
+  short_description: "Prepare for and analyze company earnings"
+  default_prompt: "Use $prepare-earnings to prepare a source-linked earnings brief for this company."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

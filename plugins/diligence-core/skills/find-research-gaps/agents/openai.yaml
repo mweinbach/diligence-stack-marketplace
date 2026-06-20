@@ -1,0 +1,12 @@
+interface:
+  display_name: "Research Gap Finder"
+  short_description: "Find missing evidence and prioritize next research"
+  default_prompt: "Use $find-research-gaps to identify what this thesis still needs to prove."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

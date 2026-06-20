@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "company-initiation",
+      "prompt": "Build a source-linked initiation packet for a covered company, including a thesis map, metrics, risks, and watch items.",
+      "expected_skills": ["company-diligence", "diligence-research"],
+      "access": "subscriber",
+      "success_criteria": ["calls list_catalog before filtered search", "fetches material evidence", "preserves evidence ids and confidence", "includes counter-thesis and falsification conditions"]
+    },
+    {
+      "id": "market-primer",
+      "prompt": "Create a market primer that maps the architecture, value chain, bottlenecks, adoption path, and value pools.",
+      "expected_skills": ["market-diligence", "diligence-research"],
+      "access": "subscriber",
+      "success_criteria": ["defines the economic unit", "separates current revenue from optionality", "includes scenarios and leading indicators"]
+    },
+    {
+      "id": "driver-model",
+      "prompt": "Build a base, upside, and downside driver model from the research and show every material assumption source.",
+      "expected_skills": ["build-diligence-model", "diligence-research"],
+      "access": "subscriber",
+      "success_criteria": ["uses formulas rather than plugged outputs", "creates an assumption register", "adds sensitivities and checks", "does not invent missing historicals"]
+    },
+    {
+      "id": "thesis-monitor",
+      "prompt": "Turn this thesis into a quarterly monitoring dashboard with thresholds and falsification conditions.",
+      "expected_skills": ["track-investment-thesis"],
+      "access": "subscriber",
+      "success_criteria": ["separates leading and lagging signals", "sets review dates", "defines evidence-based confidence changes"]
+    },
+    {
+      "id": "pre-earnings",
+      "prompt": "Prepare a pre-earnings brief with the critical KPIs, scenarios, and management questions.",
+      "expected_skills": ["prepare-earnings"],
+      "access": "subscriber",
+      "success_criteria": ["labels company guidance and external expectations separately", "defines thesis-moving thresholds", "uses dated sources"]
+    },
+    {
+      "id": "post-earnings",
+      "prompt": "Analyze what the latest earnings release changes in the model and thesis.",
+      "expected_skills": ["prepare-earnings", "track-investment-thesis"],
+      "access": "subscriber",
+      "success_criteria": ["verifies current actuals against a primary source", "bridges operating drivers", "updates only assumptions changed by evidence"]
+    },
+    {
+      "id": "competitive-map",
+      "prompt": "Map the competitive landscape and identify durable control points versus temporary bottlenecks.",
+      "expected_skills": ["map-competitive-landscape"],
+      "access": "subscriber",
+      "success_criteria": ["maps ecosystem roles before ranking", "includes substitutes and dependencies", "shows how architecture scenarios reorder competitors"]
+    },
+    {
+      "id": "gap-analysis",
+      "prompt": "Identify what evidence this thesis still needs and rank the next research by value of information.",
+      "expected_skills": ["find-research-gaps", "evidence-audit"],
+      "access": "subscriber",
+      "success_criteria": ["links gaps to decision impact", "specifies best next source", "distinguishes resolvable from irreducible uncertainty"]
+    },
+    {
+      "id": "management-prep",
+      "prompt": "Prepare questions for management that resolve the biggest thesis and model uncertainties.",
+      "expected_skills": ["prepare-management-meeting"],
+      "access": "subscriber",
+      "success_criteria": ["avoids questions answered publicly", "includes neutral follow-ups and disconfirming probes", "does not solicit material nonpublic information"]
+    },
+    {
+      "id": "exhibit-book",
+      "prompt": "Find the best existing charts and tables for this market thesis and build an exhibit index.",
+      "expected_skills": ["find-research-exhibits"],
+      "access": "subscriber",
+      "success_criteria": ["searches chart and image evidence", "fetches both image and derived text", "reviews adjacent context", "respects access restrictions"]
+    },
+    {
+      "id": "private-research-authorized",
+      "prompt": "Compare the Diligence Stack house view with entitled external equity research for this ticker.",
+      "expected_skills": ["equity-research-brief"],
+      "access": "private-equity-research",
+      "success_criteria": ["checks catalog entitlement", "samples multiple publishers", "labels private sources", "does not reproduce substantial report text"]
+    },
+    {
+      "id": "private-research-unavailable",
+      "prompt": "Use private equity research for this company.",
+      "expected_skills": ["equity-research-brief"],
+      "access": "subscriber-without-private-entitlement",
+      "success_criteria": ["does not query an absent corpus key", "offers a subscriber-corpus-only brief", "does not imply private research was searched"]
+    },
+    {
+      "id": "oauth-expired",
+      "prompt": "Search the Diligence Stack for recent evidence, but the MCP returns OAuth authorization required.",
+      "expected_skills": ["diligence-research"],
+      "access": "expired-session",
+      "success_criteria": ["reports a connection failure rather than no evidence", "requests reauthorization", "retries list_catalog after authorization"]
+    },
+    {
+      "id": "evidence-audit",
+      "prompt": "Audit whether this ROI and market-size thesis is supported by the cited evidence and model.",
+      "expected_skills": ["evidence-audit", "build-diligence-model"],
+      "access": "subscriber",
+      "success_criteria": ["reproduces calculations", "checks denominators and attribution", "ranks unsupported claims by materiality", "defines upgrade evidence"]
+    }
+  ]
+}

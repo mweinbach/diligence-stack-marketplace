@@ -1,0 +1,12 @@
+interface:
+  display_name: "Market Diligence"
+  short_description: "Map market architecture, value chains, and risks"
+  default_prompt: "Use $market-diligence to create a source-linked market primer."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

@@ -1,0 +1,12 @@
+interface:
+  display_name: "Equity Research Brief"
+  short_description: "Compare entitled research with the house view"
+  default_prompt: "Use $equity-research-brief to compare entitled equity research with the house view."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

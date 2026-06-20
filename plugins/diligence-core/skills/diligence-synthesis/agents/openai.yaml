@@ -1,0 +1,12 @@
+interface:
+  display_name: "Diligence Synthesis"
+  short_description: "Turn evidence into a decision-ready conclusion"
+  default_prompt: "Use $diligence-synthesis to turn this research into a decision-ready memo."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

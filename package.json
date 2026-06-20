@@ -1,0 +1,14 @@
+{
+  "name": "diligence-stack-marketplace",
+  "version": "0.3.0",
+  "private": true,
+  "description": "A dual Codex and Claude plugin marketplace for diligence workflows.",
+  "scripts": {
+    "validate": "python scripts/validate.py",
+    "package:cowork": "python scripts/package_cowork.py"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

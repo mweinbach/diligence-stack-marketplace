@@ -1,0 +1,12 @@
+interface:
+  display_name: "Evidence Audit"
+  short_description: "Audit claim quality, provenance, and confidence"
+  default_prompt: "Use $evidence-audit to test whether this thesis is supported by its evidence."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

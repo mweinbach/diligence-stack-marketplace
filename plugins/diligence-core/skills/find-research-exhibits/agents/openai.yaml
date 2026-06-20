@@ -1,0 +1,12 @@
+interface:
+  display_name: "Research Exhibit Finder"
+  short_description: "Find source-linked charts, tables, and exhibits"
+  default_prompt: "Use $find-research-exhibits to assemble the best exhibits for this research question."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"

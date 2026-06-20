@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "diligence-core",
+  "displayName": "Diligence Core",
+  "version": "0.3.0",
+  "description": "Creative Strategies research on company and industry fundamentals across the AI stack and beyond. Paid Diligence Stack access required.",
+  "author": {
+    "name": "Diligence Stack Maintainers"
+  },
+  "license": "MIT",
+  "keywords": ["diligence", "research", "evidence", "risk", "investment"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

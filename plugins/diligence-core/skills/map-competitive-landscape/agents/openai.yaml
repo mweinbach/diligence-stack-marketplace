@@ -1,0 +1,12 @@
+interface:
+  display_name: "Competitive Landscape"
+  short_description: "Map competitors, control points, and value pools"
+  default_prompt: "Use $map-competitive-landscape to map this market and its competitive control points."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "diligence-stack"
+      description: "Diligence Stack subscriber research"
+      transport: "streamable_http"
+      url: "https://portal.thediligencestack.com/mcp"
