@@ -2,6 +2,8 @@
 
 A shared Codex, ChatGPT, Claude Code, and Claude Cowork plugin for **The Diligence Stack by Creative Strategies**.
 
+[**Install in Claude Cowork**](https://claude.ai/desktop/customize/plugins/new?marketplace=mweinbach%2Fdiligence-stack-marketplace&plugin=diligence-core)
+
 The Diligence Stack is a Substack research publication covering the core fundamentals of companies and industries across the technology stack. It focuses on AI and the layers AI connects—semiconductors, infrastructure, cloud, platforms, software, customer adoption, business models, and competitive position—while extending to any market where full-stack diligence matters.
 
 It connects to the private subscriber portal's MCP server at `https://portal.thediligencestack.com/mcp`. The server uses OAuth, so each user signs in through the client during installation or first use; no client secret or access token is stored in this repository. Installing the plugin does not grant a subscription.

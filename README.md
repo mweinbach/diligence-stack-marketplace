@@ -2,6 +2,8 @@
 
 A dual-platform plugin marketplace for **The Diligence Stack by Creative Strategies**.
 
+[**Install Diligence Core in Claude Cowork**](https://claude.ai/desktop/customize/plugins/new?marketplace=mweinbach%2Fdiligence-stack-marketplace&plugin=diligence-core)
+
 ## What is The Diligence Stack?
 
 The Diligence Stack is a Creative Strategies research publication on Substack covering the core fundamentals of companies, technologies, and industries. It is designed as a due-diligence resource for the full technology stack: semiconductors, infrastructure, cloud platforms, software, adoption, business models, and competitive positioning.
@@ -87,7 +89,13 @@ Authorize Diligence Stack when Claude prompts during installation or first use. 
 
 ### Claude Cowork
 
-Anthropic uses the same `.claude-plugin` bundle format for Cowork and Claude Code. Build the distributable zip, then upload or publish that bundle through your Cowork plugin distribution flow:
+Use the one-click installer:
+
+[**Install Diligence Core in Claude Cowork**](https://claude.ai/desktop/customize/plugins/new?marketplace=mweinbach%2Fdiligence-stack-marketplace&plugin=diligence-core)
+
+The link opens Claude Desktop's plugin installer and provides a browser fallback. It adds the `mweinbach/diligence-stack-marketplace` marketplace and selects `diligence-core` for installation.
+
+For manual or offline distribution, Anthropic uses the same `.claude-plugin` bundle format for Cowork and Claude Code. Build the distributable zip:
 
 ```powershell
 npm run package:cowork
